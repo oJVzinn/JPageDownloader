@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Extrair Snapshot</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            width: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #181B1E;
+            padding: 20px 15px;
+            flex-direction: column;
+            color: white;
+            gap: 10px;
+            text-align: center;
+        }
+
+        .title {
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+        #get {
+            background-color: #304FFE;
+            border-radius: 5px;
+            width: 150px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            outline: none;
+            border: none;
+        }
+
+        #archiveName {
+            width: 140px;
+            height: 30px;
+            padding: 0;
+            border-radius: 5px;
+            outline: none;
+            border: none;
+            padding-inline: 5px;
+        }
+
+        #get:hover {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<span class="title">Insira o nome do arquivo</span>
+<input type="text" value="Arquivo_Extraido" placeholder="Nome do Arquivo" id="archiveName">
+<button id="get">Extrair Conteúdo</button>
+<span id="result">Saída: -</span>
+<script src="popup.js"></script>
+</body>
+</html>
